@@ -1,13 +1,13 @@
 const assertEqual = function(actual, expected) {
-  if (actual === expected){
+  if (actual === expected) {
     console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
-  } else if (actual !== expected){
+  } else if (actual !== expected) {
     console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
 
-function tail(array1){
+const tail = function(array1) {
   if (array1.length === 1) {
     return [];
   } else {

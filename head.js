@@ -1,15 +1,15 @@
 const assertEqual = function(actual, expected) {
-  if (actual === expected){
+  if (actual === expected) {
     console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
-  } else if (actual !== expected){
+  } else if (actual !== expected) {
     console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
 
-function head(array1){
+const head = function(array1) {
   return array1[0];
-}
+};
 
 
 
