@@ -1,8 +1,18 @@
+// // These functions and tests are no longer needed because we are now using Chai and Mocha. However they are tested here using Chai/Mocha.
 
 const assertArraysEqual = require('../assertArraysEqual');
+const assert = require('chai').assert;
+
+describe("#assertArraysEqual", () => {
+  
+  it("returns identical for [1,2,3] and [1,2,3]", () => {
+    assert.equal(assertArraysEqual([1,2,3],[1,2,3]),console.log("The arrays are identical."));
+  });
+
+  it("returns not identical for [1,2,3] and [1,3,4]", () => {
+    assert.equal(assertArraysEqual([1,2,3],[1,3,4]),console.log("The arrays are not identical."));
+  });
+  
+});
 
 
-
-// Test
-assertArraysEqual([1,2,3],[1,3,4]); // should show not identical
-assertArraysEqual([1,2,3],[1,2,3]); // should show identical
