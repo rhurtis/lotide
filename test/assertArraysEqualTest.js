@@ -6,11 +6,11 @@ const assert = require('chai').assert;
 describe("#assertArraysEqual", () => {
   
   it("returns identical for [1,2,3] and [1,2,3]", () => {
-    assert.equal(assertArraysEqual([1,2,3],[1,2,3]),console.log("The arrays are identical."));
+    assert.strictEqual(assertArraysEqual([1,2,3],[1,2,3]),console.log("The arrays are identical."));
   });
 
   it("returns not identical for [1,2,3] and [1,3,4]", () => {
-    assert.equal(assertArraysEqual([1,2,3],[1,3,4]),console.log("The arrays are not identical."));
+    assert.strictEqual(assertArraysEqual([1,2,3],[1,3,4]),console.log("The arrays are not identical."));
   });
   
 });
