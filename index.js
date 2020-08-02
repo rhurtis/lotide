@@ -17,22 +17,24 @@ const assertEqual = require('./assertEqual.js');
 const assertObjectsEqual = require('./assertObjectsEqual.js');
 
 
-module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
-  countLetters: countLetters,
-  findKey: findKey,
-  findKeyByValue: findKeyByValue,
-  eqArrays: eqArrays,
-  countOnly: countOnly,
-  eqObjects: eqObjects,
-  map: map,
-  takeUntil: takeUntil,
-  without: without,
-  letterPositions: letterPositions,
-  assertArraysEqual: assertArraysEqual,
-  assertEqual: assertEqual,
-  assertObjectsEqual: assertObjectsEqual
-
+const indexObj = {
+  head,
+  tail,
+  middle,
+  countLetters,
+  findKey,
+  findKeyByValue,
+  eqArrays,
+  countOnly,
+  eqObjects,
+  map,
+  takeUntil,
+  without,
+  letterPositions,
+  assertArraysEqual,
+  assertEqual,
+  assertObjectsEqual
 };
+
+
+module.exports = indexObj;
