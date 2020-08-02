@@ -25,23 +25,25 @@ const findKeyByValue = function(object1,value1) {
 
 };
 
-// testing using the assertEqual function.
+module.exports = findKeyByValue;
 
-let testObj = { 'colour': 'red', 'shape': 'ball', 'size': 'large'};
-let testValue1 = 'red';
-let testValue2 = 'ball';
-let testValue3 = 'large';
+// // testing using the assertEqual function.
 
-assertEqual(findKeyByValue(testObj,testValue1), 'colour');
-assertEqual(findKeyByValue(testObj,testValue2), 'shape');
-assertEqual(findKeyByValue(testObj,testValue3), 'size');
+// let testObj = { 'colour': 'red', 'shape': 'ball', 'size': 'large'};
+// let testValue1 = 'red';
+// let testValue2 = 'ball';
+// let testValue3 = 'large';
+
+// assertEqual(findKeyByValue(testObj,testValue1), 'colour');
+// assertEqual(findKeyByValue(testObj,testValue2), 'shape');
+// assertEqual(findKeyByValue(testObj,testValue3), 'size');
 
 
-const bestTVShowsByGenre = {
-  sciFi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama:  "The Wire"
-};
+// const bestTVShowsByGenre = {
+//   sciFi: "The Expanse",
+//   comedy: "Brooklyn Nine-Nine",
+//   drama:  "The Wire"
+// };
 
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);

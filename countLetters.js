@@ -30,8 +30,10 @@ const countLetters = function(string1) {
 
   return results;
 };
+module.exports = countLetters;
 
-console.log(countLetters('hello world')); // should return: { h: 1, e: 1, l: 3, o: 2, w: 1, r: 1, d: 1 }
+
+//console.log(countLetters('hello world')); // should return: { h: 1, e: 1, l: 3, o: 2, w: 1, r: 1, d: 1 }
 
 // Testing using the assertEqual function:NOT WORKING CORRECTLY but manual verification works. Will follow up.
 

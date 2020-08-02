@@ -89,10 +89,12 @@ const assertObjectsEqual = function(object3, object4) {
   // Implement me!
 };
 
-//test cases
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
-const abc = { a: "1", b: "2", c: "3" };
+module.exports = assertObjectsEqual;
 
-assertObjectsEqual(ab,ba);
-assertObjectsEqual(ab,abc);
+// //test cases
+// const ab = { a: "1", b: "2" };
+// const ba = { b: "2", a: "1" };
+// const abc = { a: "1", b: "2", c: "3" };
+
+// assertObjectsEqual(ab,ba);
+// assertObjectsEqual(ab,abc);

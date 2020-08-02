@@ -31,18 +31,18 @@ const map = function(array, callback) {
   return results;
 };
 
+module.exports = map;
 
 
+// // First test case: using map normally
+// const results1 = map(words, word => word[0]);
+// //console.log(results1);
+// assertArraysEqual(results1,[ 'g', 'c', 't', 'm', 't' ]);
 
-// First test case: using map normally
-const results1 = map(words, word => word[0]);
-//console.log(results1);
-assertArraysEqual(results1,[ 'g', 'c', 't', 'm', 't' ]);
+// // second test case: Using map inline
+// assertArraysEqual(map(['hello','world','how','are','you'], word => word[0]),['h','w','h','a','y']);
 
-// second test case: Using map inline
-assertArraysEqual(map(['hello','world','how','are','you'], word => word[0]),['h','w','h','a','y']);
-
-//third test case: Using map with variables
-let word2 = ['the','real','slim','shady'];
-let callbackFcn = word => word[0];
-assertArraysEqual(map(word2,callbackFcn),['t','r','s','s']);
+// //third test case: Using map with variables
+// let word2 = ['the','real','slim','shady'];
+// let callbackFcn = word => word[0];
+// assertArraysEqual(map(word2,callbackFcn),['t','r','s','s']);

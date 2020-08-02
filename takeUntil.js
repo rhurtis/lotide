@@ -38,39 +38,39 @@ const takeUntil = function(array, callback) {
   return collection; //This will return the entire array if there are no truthy values detected within the for..of loop.
 };
 
+module.exports = takeUntil;
 
 
+// // EXPECTED INPUT
+// const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
+// const results1 = takeUntil(data1, x => x < 0);
+// console.log(results1);
+// assertArraysEqual(results1,[ 1, 2, 5, 7, 2 ]); // Using the assertArraysEqual function
+// console.log('---');
 
-// EXPECTED INPUT
-const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
-const results1 = takeUntil(data1, x => x < 0);
-console.log(results1);
-assertArraysEqual(results1,[ 1, 2, 5, 7, 2 ]); // Using the assertArraysEqual function
-console.log('---');
+// const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
+// const results2 = takeUntil(data2, x => x === ',');
+// console.log(results2);
+// assertArraysEqual(results2,[ 'I\'ve', 'been', 'to', 'Hollywood' ]); // Using the assertArraysEqual function
+// console.log('---');
 
-const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
-const results2 = takeUntil(data2, x => x === ',');
-console.log(results2);
-assertArraysEqual(results2,[ 'I\'ve', 'been', 'to', 'Hollywood' ]); // Using the assertArraysEqual function
-console.log('---');
+// //A case where the are no truthy values.
+// const data3 = [1,2,3,4];
+// const results3 = takeUntil(data3, x => x < 0);
+// console.log(results3);
+// assertArraysEqual(results3,[ 1, 2, 3, 4]); // Using the assertArraysEqual function
 
-//A case where the are no truthy values.
-const data3 = [1,2,3,4];
-const results3 = takeUntil(data3, x => x < 0);
-console.log(results3);
-assertArraysEqual(results3,[ 1, 2, 3, 4]); // Using the assertArraysEqual function
+// /* EXPECTED OUTPUT
+// [ 1, 2, 5, 7, 2 ]
+// The arrays are identical.
+// ---
+// [ 'I\'ve', 'been', 'to', 'Hollywood' ]
+// The arrays are identical.
+// ---
+// [ 1, 2, 3, 4]
+// The arrays are identical.
 
-/* EXPECTED OUTPUT
-[ 1, 2, 5, 7, 2 ]
-The arrays are identical.
----
-[ 'I\'ve', 'been', 'to', 'Hollywood' ]
-The arrays are identical.
----
-[ 1, 2, 3, 4]
-The arrays are identical.
-
-*/
+// */
 
 
 
