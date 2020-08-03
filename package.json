@@ -1,0 +1,26 @@
+{
+  "name": "@rhurtis/lotide",
+  "version": "1.0.0",
+  "description": "A library (created for learning purpose) that provides utility functions, similar to Lodash.  ",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhurtis/lotide.git"
+  },
+  "author": "Ryan Hurtis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rhurtis/lotide/issues"
+  },
+  "homepage": "https://github.com/rhurtis/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1"
+  }
+}
